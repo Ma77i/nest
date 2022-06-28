@@ -1,0 +1,31 @@
+<div class="container mx">
+  <h2>Usuarios</h2>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <a href="/admin/addUser" class="btn btn-outline-dark" type="button">Agregar usuario</a>
+    </div>
+      <table class="table table-sm table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Alias</th>
+                <th scope="col">Avatar</th>
+                <th scope="col">Mail</th>
+            </tr>
+        </thead>
+        <tbody class="">
+            {{#each users}}
+            <tr>
+              <td>{{this.firstName}}</td>
+              <td>{{this.lastName}}</td>
+              <td>{{this.alias}}</td>
+              <td>{{this.avatar}}</td>
+              <td>{{this.mail}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <a href="/admin" class="btn btn-dark" type="button">Atras</a>
+  </div>
+</div>

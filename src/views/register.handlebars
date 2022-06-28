@@ -1,0 +1,41 @@
+<div class="container mx">
+
+    <h2>Registrarse</h2>
+    
+    <form method="post" class="m-4">
+        
+        <div class="input-group">
+            <label for="firstName" class="input-group-text visually-hidden">Nombre </label>
+            <input name="firstName" placeholder="Nombre" class="form-control" required>
+        </div>
+        <div class="input-group">
+            <label for="lastName" class="input-group-text visually-hidden">Apellido </label>
+            <input name="lastName" placeholder="Apellido" class="form-control" required>
+        </div>
+        <div class="input-group">
+            <label for="userName" class="input-group-text visually-hidden">Usuario </label>
+            <input name="userName" placeholder="Usuario" class="form-control" required>
+        </div>
+        <div class="input-group">
+            <label for="phone" class="input-group-text visually-hidden">Telefono </label>
+            <input id="phone" type="tel" name="phone" placeholder="Telefono" class="form-control" required>
+        </div>
+        {{> formErr }}
+        <div class="input-group">
+            <label for="email" class="input-group-text visually-hidden">Mail</label>
+            <input name="email" placeholder="Mail" class="form-control" required>
+        </div>
+        <div class="input-group">
+            <label for="password" class="input-group-text visually-hidden">Contraseña</label>
+            <input name="password" type="password" placeholder="Contraseña" class="form-control" required>
+        </div>
+        <div class="input-group">
+            <label for="confirmPassword" class="input-group-text visually-hidden">Confirmar Contraseña </label>
+            <input name="confirmPassword" type="password" placeholder="Confirmar Contraseña" class="form-control" required>
+        </div>
+        <div class="col-2">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </form>
+    <h3>¿Ya tienes cuenta? <a href="/login"><strong>Inicia sesion</strong></a></h3>
+</div>
